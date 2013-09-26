@@ -78,6 +78,9 @@ fancy_echo "Installing ImageMagick, to crop and resize images ..."
 fancy_echo "Installing QT, used by Capybara Webkit for headless Javascript integration testing ..."
   brew install qt
 
+fancy_echo "Installing asciidoc, used for generating the NOTHS API docs"
+  brew install asciidoc
+
 fancy_echo "Installing watch, to execute a program periodically and show the output ..."
   brew install watch
 ### end mac-components/packages
