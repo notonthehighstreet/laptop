@@ -147,7 +147,8 @@ fancy_echo "Installing wget ..."
 
 fancy_echo "Installing Chrome ..."
   wget https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg
-  while [ ! -f /Volumes/Google\ Chrome/Google\ Chrome.app/ ]
+  open googlechrome.dmg
+  while [ ! -d /Volumes/Google\ Chrome/Google\ Chrome.app/ ]
   do
     echo "Waiting for Finder to verify image..."
     sleep 2
