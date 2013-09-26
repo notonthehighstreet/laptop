@@ -218,7 +218,7 @@ fancy_echo "Installing Kindle ..."
   brew cask install kindle
 
 fancy_echo "Installing LiveReload ..."
-  brew cask install live-reload
+  brew cask install livereload
 
 fancy_echo "Installing PgAdmin3 (PostgreSQL GUI)..."
   brew cask install pgadmin3
