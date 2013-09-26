@@ -145,9 +145,6 @@ fancy_echo "Installing node ..."
 fancy_echo "Installing wget ..."
   brew install wget
 
-fancy_echo "Installing hub, a command line tool for GitHub ..."
-  brew install hub
-
 fancy_echo "Installing brew-cask (for command-line installation of Mac apps) ..."
   brew tap phinze/homebrew-cask
   brew install brew-cask
