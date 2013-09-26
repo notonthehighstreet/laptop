@@ -139,6 +139,9 @@ fancy_echo "Installing the heroku-config plugin to pull config variables locally
   heroku plugins:install git://github.com/ddollar/heroku-config.git
 ### end mac-components/heroku
 
+fancy_echo "Installing node ..."
+  brew install node
+
 fancy_echo "Installing wget ..."
   brew install wget
 
