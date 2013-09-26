@@ -22,6 +22,8 @@ for Lion (OS X 10.7) or Mountain Lion (OS X 10.8).
 
 ### Linux
 
+*Note: In our fork, the Linux config may not be as complete, since most of us use Macs*
+
 We support:
 
 * [13.04: Raring Ringtail](https://wiki.ubuntu.com/RaringRingtail/ReleaseNotes),
@@ -71,6 +73,35 @@ What it sets up
 * The Silver Searcher for finding things in files
 * Tmux for saving project state and switching between projects
 * Watch for periodically executing a program and displaying the output
+
+Our NOTHS forks also sets up a number of apps thanks to brew-cask:
+
+* 1Password
+* Adium
+* Chrome
+* Firefox
+* Fluid
+* GitHub
+* GitX
+* Google Notifier
+* HipChat
+* iTerm 2
+* Kindle
+* LastPass
+* LiveReload
+* Mailplane
+* MenuMeters
+* PgAdmin3
+* RubyMine
+* Sequel Pro
+* Skype
+* Sourcetree
+* Spotify
+* Sublime Text
+* TextMate
+* The Unarchiver
+* Tower
+* Vagrant
 
 It should take less than 15 minutes to install (depends on your machine).
 
