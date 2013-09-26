@@ -125,7 +125,7 @@ fancy_echo "Updating to latest Rubygems version ..."
   gem update --system
 
 fancy_echo "Installing critical Ruby gems for Rails development ..."
-  gem install bundler pg rails unicorn --no-document
+  gem install bundler pg rails unicorn zeus --no-document
 
 fancy_echo "Installing GitHub CLI client ..."
   curl http://hub.github.com/standalone -sLo ~/.bin/hub
@@ -145,13 +145,88 @@ fancy_echo "Installing node ..."
 fancy_echo "Installing wget ..."
   brew install wget
 
+fancy_echo "Installing hub, a command line tool for GitHub ..."
+  brew install hub
+
+fancy_echo "Installing brew-cask (for command-line installation of Mac apps) ..."
+  brew tap phinze/homebrew-cask
+  brew install brew-cask
+
 fancy_echo "Installing Chrome ..."
-  wget https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg
-  open googlechrome.dmg
-  while [ ! -d /Volumes/Google\ Chrome/Google\ Chrome.app/ ]
-  do
-    echo "Waiting for Finder to verify image..."
-    sleep 2
-  done
-  open googlechrome.dmg
-  cp "/Volumes/Google\ Chrome/Google\ Chrome.app/" /Applications/
+  brew cask install google-chrome
+
+fancy_echo "Installing Firefox ..."
+  brew cask install firefox
+
+fancy_echo "Installing Sublime Text ..."
+  brew cask install sublime-text
+
+fancy_echo "Installing TextMate ..."
+  brew cask install textmate
+
+fancy_echo "Installing Adium ..."
+  brew cask install adium
+
+fancy_echo "Installing HipChat ..."
+  # I have a PR to rename this to hipchat rather than hip-chat:
+  # https://github.com/phinze/homebrew-cask/pull/1087
+  brew cask install hip-chat
+
+fancy_echo "Installing Sequel Pro ..."
+  brew cask install sequel-pro
+
+fancy_echo "Installing Vagrant ..."
+  brew cask install vagrant
+
+fancy_echo "Installing Sourcetree, a free Git & Mercurial client ..."
+  brew cask install sourcetree
+
+fancy_echo "Installing Tower, Git client (30 day trial) ..."
+  brew cask install tower
+
+fancy_echo "Installing The Unarchiver ..."
+  brew cask install the-unarchiver
+
+fancy_echo "Installing the GitHub app ..."
+  brew cask install github
+
+fancy_echo "Installing iTerm 2 ..."
+  brew cask install iterm2
+
+fancy_echo "Installing 1Password ..."
+  brew cask install one-password
+
+fancy_echo "Installing LastPass ..."
+  brew cask install lastpass-universal
+
+fancy_echo "Installing Spotify ..."
+  brew cask install spotify
+
+fancy_echo "Installing Fluid (Turn Your Favorite Web Apps into Real Mac Apps) ..."
+  brew cask install fluid
+
+fancy_echo "Installing Mailplane ..."
+  brew cask install mailplane
+
+fancy_echo "Installing MenuMeters ..."
+  brew cask install menu-meters
+
+fancy_echo "Installing Google Notifier ..."
+  brew cask install google-notifier
+
+fancy_echo "Installing Kindle ..."
+  brew cask install kindle
+
+fancy_echo "Installing LiveReload ..."
+  brew cask install live-reload
+
+fancy_echo "Installing PgAdmin3 (PostgreSQL GUI)..."
+  brew cask install pgadmin3
+
+fancy_echo "Installing RubyMine ..."
+  brew cask install rubymine
+
+fancy_echo "Installing Skype ..."
+  brew cask install skype
+
+# TODO: gitx (want GitX-dev fork but no recipe yet)
