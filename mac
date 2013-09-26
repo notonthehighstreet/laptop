@@ -165,8 +165,6 @@ fancy_echo "Installing Adium ..."
   brew cask install adium
 
 fancy_echo "Installing HipChat ..."
-  # I have a PR to rename this to hipchat rather than hip-chat:
-  # https://github.com/phinze/homebrew-cask/pull/1087
   brew cask install hip-chat
 
 fancy_echo "Installing Sequel Pro ..."
